@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pricing table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', Helvetica;
+        }
+        
+        .container {
+            background-color: pink;
+            min-height: 70vh;
+            width: 100%;
+            padding: 23px 0px;
+        }
+        
+        .container h1 {
+            text-align: center;
+            margin-bottom: 2opx;
+            color: rgb(86, 22, 164);
+            ;
+        }
+        
+        .price-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .box {
+            margin: 0px 10px;
+            text-align: center;
+            background: #54565b;
+            color: white;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        
+        .box h2 {
+            margin: 20px 23px;
+        }
+        
+        .box ul {
+            list-style: none;
+            color: white;
+            text-align: center;
+            margin: 20px;
+        }
+        
+        .box ul li {
+            padding: 9px 63px;
+        }
+        
+        .box ul li::before {
+            color: crimson;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        
+        .box .btn {
+            font-size: 15px;
+            margin: 20px 20px;
+            border: 2px solid darkcyan;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 25px 35px 25px 35px;
+            transition: all 0.5s;
+        }
+        
+        .box .btn:hover {
+            background-color: darkcyan;
+            cursor: pointer;
+        }
+        
+        .box span {
+            font-size: 16px;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+            .price-row {
+                flex-wrap: wrap;
+            }
+            .box {
+                margin: 10px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-decoration: underline;"><b><i>  Explore our Plans and Pricing!</i></b></h1>
+        <h4 style="color:darkcyan;text-decoration:underline"><i><center>~Every type and every one</center></i></h4>
+        <div class="price-row">
+            <div class="box" style="background-color: rgb(210, 115, 210)">
+                <h2 style="text-decoration: underline;">Basic</h2>
+                <h1 style="color: aliceblue;">$10 <span>/month</span></h1>
+                <h4 style="color: aliceblue;">
+                    <center>Forever essential</center>
+                </h4>
+                <ul>
+                    <li>2,500 subscribers</li>
+                    <li>1 Team member</li>
+                    <li>1 Domain</li>
+                    <li>200 emails/day</li>
+                    <li>1 Workspace</li>
+                    <li>Basic Integrations</li>
+                </ul>
+                <div class="btn">Select your plan!</div>
+            </div>
+            <div class="box" style="background-color:rgb(191, 58, 191)">
+                <h2 style="text-decoration: underline;">Pro</h2>
+                <h1 style=" color: aliceblue; ">$25<span>/month</span></h1>
+                <h4 style="color: aliceblue; ">
+                    <center>All the basic for starting <br>new business</center>
+                </h4>
+                <ul>
+                    <li>10,000 subscribers</li>
+                    <li>10 Team member</li>
+                    <li>5 Domain</li>
+                    <li>no limit emails/day</li>
+                    <li>5 Workspace</li>
+                    <li>Full Integrations</li>
+                </ul>
+                <div class="btn ">Select your plan!</div>
+            </div>
+            <div class="box " style="background-color:purple ">
+                <h2 style="text-decoration: underline; ">Premium</h2>
+                <h1 style="color: aliceblue; ">$50 <span>/month</span></h1>
+                <h4 style="color: aliceblue; ">
+                    <center>Everything you need for a <br> growing business</center>
+                </h4>
+                <ul>
+                    <li>10,000 subscribers</li>
+                    <li>10 Team member</li>
+                    <li>5 Domain</li>
+                    <li>no limit emails/day</li>
+                    <li>5 Workspace</li>
+                    <li>Full Integrations</li>
+                </ul>
+                <div class="btn ">select you plan!</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
